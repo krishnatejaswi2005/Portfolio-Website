@@ -1,0 +1,325 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    background: linear-gradient(120deg, #f6d365, #fda085);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+	font-size: 1.2rem; /* Increase the font size */
+	font-family: "Outfit", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Allow links to wrap to the next line on small screens */
+}
+
+.links li {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    padding: 10px;
+}
+
+.links li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.links li a:hover {
+    color: red;
+}
+
+.nav {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.8; /* Adjust opacity as needed */
+    width: 100%;
+}
+
+main {
+    padding: 5rem 2rem; /* Adjust padding for smaller screens */
+    display: flex;
+    flex-direction: column; /* Stack main content vertically on smaller screens */
+    align-items: center;
+	justify-content: center; /* Center content horizontally */
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity as needed */
+    color: #000;
+    padding: 7px 20px; /* Adjust padding for smaller screens */
+    border: 2px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 15px;
+	font-size: 20px;
+}
+
+.name {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bt1 {
+    padding: 1rem;
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    border-radius: 50%;
+    border: 0.5px solid black;
+    transition: transform 0.3s ease;
+    background-color: #cecdcd7a;
+	position: fixed;
+	top: 50%;
+}
+
+.aboutbtn {
+    display: flex;
+    align-items: center;
+}
+
+.bt1 span {
+    opacity: 1;
+    color: #000;
+}
+
+.bt1:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.bt1:active {
+    opacity: 0.2;
+}
+.bt1-left {
+    /* position: fixed; */
+    left: 20px; /* Adjust as needed */
+    /* bottom: 20px; Adjust as needed */
+}
+
+.bt1-right {
+    /* position: fixed; */
+    right: 20px; /* Adjust as needed */
+    /* bottom: 20px; Adjust as needed */
+}
+@media screen and (max-width: 710px) {
+    .bt1-left,
+    .bt1-right {
+        display: none; /* Hide left and right buttons */
+    }
+}
+
+.para1,
+.para2 {
+    width: 100%; /* Adjust width for smaller screens */
+    max-width: 30rem; /* Limit maximum width */
+    background-color: #cecdcd7a;
+    border-radius: 15px;
+    border: 2px solid black;
+    color: #000;
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center; /* Center content */
+}
+
+.abt-main {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap; /* Allow projects to wrap to the next line on small screens */
+    justify-content: center;
+    margin-top: 2rem;
+}
+.projects h1{
+	margin-top: 1.5rem;
+	margin-bottom: 2.5rem;
+}
+
+.project1,
+.project2,
+.project3,
+.project4 {
+    width: 100%; /* Adjust width for smaller screens */
+    max-width: 20rem; /* Limit maximum width */
+    background-color: #ffffff7d;
+    border-radius: 15px;
+    border: 0.8px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin: 10px;
+    line-height: 2rem;
+}
+.projects-main{
+	padding: 2rem 2rem;
+}
+
+.projects img {
+    border-radius: 14px;
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.projects button {
+    margin-top: 20px;
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity as needed */
+    color: #000;
+    border: 2px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem; /* Adjust font size for smaller screens */
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.social-media img {
+    border-radius: 50%;
+    width: 4rem; /* Adjust size for smaller screens */
+    height: 4rem; /* Adjust size for smaller screens */
+}
+
+.insta,
+.linkedin,
+.gmail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    font-weight: bold;
+    color: #fff;
+    margin: 0 1rem; /* Add margin between social media icons */
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #fff;
+}
+@media screen and (max-width: 600px) {
+    .social-media {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media img {
+        margin-bottom: 1rem; /* Add margin between social media icons */
+    }
+
+    .insta,
+    .linkedin,
+    .gmail {
+        margin: 1rem 0; /* Add margin between social media icons */
+    }
+}
+
+/* Add this CSS for hamburger menu */
+.menu-toggle {
+    display: none; /* Hide by default */
+}
+
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+.line1, .line2, .line3 {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+
+@media screen and (max-width: 610px) {
+    .menu-toggle {
+        display: block; /* Show when screen size is reduced */
+        cursor: pointer;
+    }
+
+    .links {
+        display: none; /* Hide links by default */
+        flex-direction: column;
+        background-color: #000;
+        position: absolute;
+        top: 60px; /* Adjust as per your design */
+        left: 0;
+        width: 100%;
+        padding: 10px;
+		z-index: 1;
+    }
+
+    .links li {
+        margin: 10px 0;
+    }
+
+    .links li a {
+        color: #fff;
+    }
+
+    .nav.active .links {
+        display: flex; /* Show links when nav has active class */
+    }
+
+    .hamburger.active .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger.active .line2 {
+        opacity: 0;
+    }
+
+    .hamburger.active .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+	.nav {
+		background-color: #000;
+		color: #fff;
+		padding: 10px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		opacity: 0.8; /* Adjust opacity as needed */
+		width: 100%;
+		position: relative; /* Add this line */
+	}
+}
+
+  
+
+
